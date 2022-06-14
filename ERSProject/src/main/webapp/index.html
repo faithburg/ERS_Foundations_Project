@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script>
+$('.message a').click(function(){
+	   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+	});
+</script>
+<link rel="stylesheet" href="style.css">
+<title>ERS | Log In</title>
+</head>
+<h1>Welcome to ERS!</h1>
+<body>
+<div class="login-page">
+  <div class="form">
+    <form method="POST" action="LoginServlet" class="login-form">
+     <label for="username">Username:</label>
+      <input type="text" placeholder="Enter Username" name="username" required='required'/>
+     <label for="password">Password:</label>
+      <input type="password" placeholder="Enter Password" name="password" required="required" />
+      <button>login</button>
+      <p class="message">Not registered? <a href="signup.html">Create an account</a></p>
+    </form>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ERS | Welcome Page</title>
+<script>
+$('.message a').click(function(){
+	   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+	});
+</script>
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<h1>Hello!</h1>
+	<form>
+	<p> Select from one of the following options: </p>
+	<a href="ViewMyServlet">View Reimbursement Forms</a>
+	<br/>
+	<br/>
+	<a href="request.html">Submit a Reimbursement Form</a>
+	</form>
+</body>
+</html>

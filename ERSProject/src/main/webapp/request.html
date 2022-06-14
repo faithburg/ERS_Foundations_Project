@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script>
+$('.message a').click(function(){
+	   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+	});
+</script>
+<link rel="stylesheet" href="style2.css">
+<title>ERS | Submit Reimbursement Request</title>
+</head>
+<h1>Reimbursement Request</h1>
+<body>
+<div class="login-page">
+  <div class="form">
+    <form method="POST" action="SubmitServlet" class="login-form" enctype="multipart/form-data">
+      <input type='number' name='amount' required = 'required' placeholder="Enter Amount" />
+      <input type='text' name='description' required = 'required' placeholder="What needs to be reimbursed?" />
+       <input type='text' name="status" value='pending' />
+       <button>submit reimbursement</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
